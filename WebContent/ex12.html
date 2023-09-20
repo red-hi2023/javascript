@@ -13,20 +13,37 @@
 
 <script type="text/javascript">
 	window.console.log("==========================================");
-
+	/*
 	//변수선언 대입
-	
+	var str = "global"  //지역변수
 	//함수정의
 	function checkscope(){
-		var aaa = "local"  //
-		console.log(aaa);  // 
+		var str = "local"  //지역변수
+		console.log(str);  // 
 	}
-	
 	
 	
 	//함수실행
 	checkscope()
+	console.log(str);  
+	*/
 	
+	///////////////////////////////////////////////////
+	
+	//변수선언 대입
+	var str = "global"  //전역변수
+	
+	//함수정의
+	function checkscope(){
+		str = "local"  //전역변수값 변경
+		let str2 = "로컬"   //전역변수가 선언됨
+	}
+	
+	checkscope();
+	console.log(str); 
+	console.log(str2); 
+	
+	 
 </script>
 
 
